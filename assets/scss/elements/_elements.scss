@@ -1,0 +1,29 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27.9rem;
+    height: 7.1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+
+.primary-button {
+    background-color: $primary-color;
+    color: $light-font-color;
+}
+
+.light-button {
+    background-color: #fcfcfc;
+    color: $font-color;
+}
+
+
+@include mq('md', 'max') {
+    .custom-button {
+        width: 20rem;
+        height: 5rem;
+    }
+}
+

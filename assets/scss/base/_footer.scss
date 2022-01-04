@@ -1,0 +1,123 @@
+
+.footer {
+    padding: 9.4rem;
+    background: #000;
+    .social-links {
+        display: flex;
+        justify-content: flex-start;
+        .social-link:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5.6rem;
+            height: 5.6rem;
+            border: 1px solid rgba(255,255,255,0.53333);
+            border-radius: 50%;
+            border-width: 0.3rem;
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        margin-top: 2.7rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+
+
+    .bottom-menu {
+        display: flex;
+        justify-content: flex-end;
+      .menu-list {
+        font-size: 2rem;
+        color: $light-font-color;
+        &:not(:first-child){
+            margin-left: 1.35rem;
+        }
+        a {
+          text-decoration: none;
+          color: inherit
+        }
+      }
+    }
+    
+}
+
+@media screen and (max-width : 1080px) {
+    .footer {
+        .footer-logo {
+            margin-left: 0;
+        }
+        .copyright {
+            color: #fff;
+        }
+    }
+}
+
+@include mq('xl', 'max') {
+    .footer {
+        .social-links {
+            margin-bottom: 5rem;
+        }
+        &>div {
+            align-self: stretch;
+        }
+    }
+}
+
+@include mq('sm', 'max') {
+    .footer {
+        padding: 9rem 2rem;
+        & >div {
+            flex-direction: column;
+            .bottom-menu {
+                margin-top: 5rem;
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+}
+
+@include mq('xs', 'max') {
+    .footer {
+        .footer-logo {
+            flex-direction: row;
+            p {
+                margin-left: 5rem;
+            }
+        }
+        &>div {
+            .bottom-menu {
+                justify-content: flex-start;
+            }
+        }
+    }
+}

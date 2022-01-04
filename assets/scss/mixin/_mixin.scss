@@ -1,0 +1,19 @@
+@mixin mq($breakpoint , $mq-min-max: 'min', $mq-breakpoints: $breakpoints) {
+    
+    @if($mq-min-max == 'max') {
+        $mq-breakpoints : $max-breakpoints;
+        @if map-has-key($mq-breakpoints, $breakpoint) { 
+            @media screen and (max-width: map-get($mq-breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @if map-has-key($mq-breakpoints, $breakpoint) { 
+            @media screen and (min-width: map-get($mq-breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+}
+

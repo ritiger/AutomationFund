@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Gotham-ultra;
+  src: url("../font/gotham-ultra.ttf"); }
+@font-face {
+  font-family: Gotham;
+  src: url("../font/Gotham-Bold.otf"); }
+@font-face {
+  font-family: Gotham-thin;
+  src: url("../font/Gotham-Thin.otf"); }
+@font-face {
+  font-family: IBMPlexSans-Bold;
+  src: url("../font/IBMPlexSans-Bold.ttf"); }
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: #bfbfbf; }
+
+body {
+  font-family: 'IBMPlexSans-Bold'; }
+
+@media screen and (max-width: 499px) {
+  html {
+    font-size: 50%; } }
+@media (max-height: 600px) {
+  html {
+    font-size: 50%; } }
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.9rem;
+  height: 7.1rem;
+  background-color: #6ebc5c;
+  color: #fff; }
+
+.light-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.9rem;
+  height: 7.1rem;
+  background-color: #fcfcfc;
+  color: #000; }
+
+ul {
+  padding-left: 0;
+  list-style: none; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  padding-top: 3.8rem; }
+  .header .menu-list {
+    padding-right: 12.4rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: #fff; }
+    .header .menu-list a {
+      text-decoration: none; }
+
+.home-main .section-title {
+  padding-top: 20.4rem; }
+  .home-main .section-title .invest-title {
+    margin-bottom: 14.1rem; }
+
+/*# sourceMappingURL=style.css.map */

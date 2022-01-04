@@ -1,0 +1,29 @@
+@font-face { font-family: IBMPlexSans-Bold; src: url('../font/IBMPlexSans-Bold.ttf');}
+@font-face { font-family: Helvetica-Neue-Medium; src: url('../font/HelveticaNeue-Medium.otf');}
+@font-face { font-family: Helvetica-Neue-Medium-Italic; src: url('../font/HelveticaNeue-MediumItalic.otf');}
+@font-face { font-family: Helvetica-Neue-Light-Italic; src: url('../font/HelveticaNeue-LightItalic.otf');}
+@font-face { font-family: Helvetica-Neue-Condensed-Black; src: url('../font/Helvetica-Neue-Condensed-Black.ttf');}
+
+
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: #bfbfbf;
+}
+
+
+body {
+    font-family: 'IBMPlexSans-Bold';
+}
+
+@include mq('md', 'max') {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+
